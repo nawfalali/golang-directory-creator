@@ -22,11 +22,16 @@ func main() {
 	// project name
 	projectName := "project-name"
 
+	//project database
+	dbProvider := "mysql"
+
 	// append more directories or subdirectories
 	strDir := []string{}
 	strDir = append(strDir, "cmd")
 	strDir = append(strDir, "internal")
 	strDir = append(strDir, "pkg")
+	strDir = append(strDir, "pkg/models")
+	strDir = append(strDir, "pkg/models/"+dbProvider)
 	strDir = append(strDir, "vendor")
 	strDir = append(strDir, "api")
 	strDir = append(strDir, "web")
